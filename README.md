@@ -1,8 +1,9 @@
 # 后台管理系统前端模版
 截图
+<hr>
 ![截图](./src/assets/pic1.png)
+<hr>
 ![screenshot](./src/assets/pic2.png)
-<video src="./src/assets/video.mov"></video>
 ## Project setup
 ```
 npm install
