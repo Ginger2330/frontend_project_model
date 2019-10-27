@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+    <router-view/>
   </div>
 </template>
 
@@ -14,5 +14,9 @@ export default {
 </script>
 
 <style>
+  html, body {
+    margin: 0;
+    scroll-behavior: smooth
+  }
 
 </style>
