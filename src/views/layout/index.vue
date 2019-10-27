@@ -5,15 +5,7 @@
             <Sidebar class="sidebar"/>
             <el-container class="main-container">
                 <el-header class="header">
-                    <el-breadcrumb separator-class="el-icon-arrow-right" class="header-bread">
-                        <el-breadcrumb-item 
-                        v-for="(item, index) in breadcrumbList" 
-                        :key="index"
-                        :to="item.path"
-                        >
-                            {{item.title}}
-                        </el-breadcrumb-item>
-                    </el-breadcrumb>
+                    <Breadcrumb class="header-bread"/>
                 </el-header>
                 <el-main class="main">
                     <transition name="fade">
@@ -32,14 +24,15 @@
 import Navbar from './navbar'
 import Sidebar from './sidebar'
 import Footer from './footer'
+import Breadcrumb from './breadcrumb'
 
 export default {
     name: 'Layout',
-    components: { Navbar, Sidebar, Footer },
-    computed: {
-        breadcrumbList () {
-            return this.$route.meta
-        }
+    components: { 
+        Navbar, 
+        Sidebar, 
+        Footer, 
+        Breadcrumb 
     }
 }
 </script>
