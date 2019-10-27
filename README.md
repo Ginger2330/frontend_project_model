@@ -1,8 +1,8 @@
 # 后台管理系统前端模版
 截图
-<hr>
 ![截图](./src/assets/pic1.png)
-<hr>
+
+
 ![screenshot](./src/assets/pic2.png)
 ## Project setup
 ```
